@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Satır Seviyesi Elemanlar 
+         span,a,b,input,img,label,strong small*/
+        a {
+            display: block;
+        }
+
+        /* Inline : Satır tipi elemanların default displari inline olarak geçmektedir.*/
+        /* Block : Satır tipi elemanları, yeni satıra geçirmek için kullanılır*/
+        /*Inline Block : Eleman yeni satıra geçmez. Genişlik ve Yükseklik alabilir*/
+        .inlineblock {
+
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: deeppink;
+        }
+
+        /*Elemanları yatay yada dikey formatta hizalar*/
+
+        /**Justify-context:center elemanları tam ortada gösterir*/
+        .flex {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: right;
+
+        }
+
+        .spacebetween {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .spacearround {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+
+        .innerdiv {
+            background-color: red;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        h1{
+            text-shadow: 10px 50px black;
+            color:white
+    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inlineblock">
+        Loerem
+    </div>
+    <div class="inlineblock">2. div</div>
+    <div class="flex">
+        <div class="innerdiv">
+            Loerem
+        </div>
+        <div class="innerdiv"></div>
+
+    </div>
+    <div class="right">
+        <div class="innerdiv">
+            Loerem
+        </div>
+        <div class="innerdiv">
+
+        </div>
+    </div>
+    <div class="spacebetween">
+        <div class="innerdiv">
+            Loerem
+        </div>
+        <div class="innerdiv">
+
+        </div>
+    </div>
+    <div class="spacearround">
+        <div class="innerdiv">
+            Loerem
+        </div>
+        <div class="innerdiv">
+
+        </div>
+        <div class="innerdiv">
+
+        </div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maxime quia quisquam consequatur corrupti doloribus ipsum itaque? Tempore, incidunt at.</h1>
+
+</body>
+
+</html>
