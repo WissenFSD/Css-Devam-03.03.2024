@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Before Element ve After element sizin elementinizin hem başına hem sonuna birer element eklemektedir*/
+        /*p.main-text::before {
+            content: "Before Element";
+            background-color: deeppink;
+            color: white;
+            margin: 0 10px;
+            padding: 5px 20px;
+        }
+
+        p.main-text::after {
+            content: "After Element";
+            background-color: orange;
+            color: white;
+            margin: 0 10px;
+            padding: 5px 20px;
+        }
+        */
+        /*Yazının ilk satırını seçer*/
+        /* p:first-line{
+            background-color: darksalmon;
+            color:white
+        }*/
+        /*P'nin içerisindeki yazının sadece baş harfini seçer*/
+
+
+
+        p::first-letter{
+
+            font-size: 50px;
+            color: blueviolet;
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            background-color: gainsboro;
+        }
+        div p::selection{
+            background-color: deeppink;
+        }
+
+        /**/
+        *{
+            -webkit-touch-callout: none; /*IOS Safari*/
+            -webkit-user-select: none; /*MacOs Safaeri*/
+            -ms-user-select: none;  /*İe Explorer*/
+            user-select: none; /*Chrome-Opera-FireFox*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat necessitatibus sint at,
+            perferendis perspiciatis animi voluptates dolore, eos ullam explicabo non odio quis sequi eligendi eaque
+            impedit minima, quidem aut repellendus expedita praesentium quos corporis tempore nam? Sit quas eum
+            perferendis delectus officiis facere labore dolorum fugit est sunt, accusantium commodi, officia suscipit
+            dolorem accusamus inventore eligendi praesentium consectetur nostrum. Enim expedita corrupti nesciunt,
+            fugit, repudiandae odit natus quo saepe qui asperiores voluptas esse minima deserunt labore maiores magnam
+            suscipit ab maxime consectetur soluta. Sit harum odio cupiditate necessitatibus, natus sint, commodi quae
+            eius provident, voluptas aut perspiciatis nam! Deleniti.</p>
+    </div>
+</body>
+
+</html>
