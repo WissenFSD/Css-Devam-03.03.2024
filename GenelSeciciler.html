@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mydiv{
+            border:3px solid red;
+        }
+        /*Div'den sonra gelen p'ler*/
+        div.mydiv~p{
+
+            color:darksalmon;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Divden önce gelen p </p>
+    <div class="mydiv">
+        <span>Div Elementi</span>
+        <p>Divin içerisindeki p </p>
+    </div>
+    <p>Div'in altındaki p</p>
+    <span>Div'in altındaki span öğesi</span>
+    <ul>
+        <li>birinci li</li>
+        <li>ikinci li</li>
+    </ul>
+    <p>Div'in altındaki p </p>
+</body>
+</html>

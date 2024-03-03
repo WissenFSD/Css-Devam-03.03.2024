@@ -5,10 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ul.example {
+            list-style: none;
+        }
+
+        /*2 seviye a ları seçebilmek için*/
+        ul.example>li>ul>li>a {
+
+            color: deeppink;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        /*1 seviye olan a ları seçmek için*/
+        ul.example>li>a {
+
+            color: yellowgreen;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <ul>
+    <ul class="example">
         <li>
             <a>1 seviye a</a>
             <ul>
