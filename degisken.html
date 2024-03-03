@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+
+            --pembe: yellow;
+            --bordersiyah: gray;
+            --bodybackground: aqua;
+        }
+
+        body {
+            background-color: var(--bodybackground);
+        }
+
+        div {
+            height: 300px;
+            width: 300px;
+        }
+
+        .div1 {
+            background-color: var(--pembe);
+            border-top: 3px solid var(--bordersiyah);
+        }
+
+        .div2 {
+            background-color: var(--bordersiyah);
+            border-bottom: 3px solid var(--pembe);
+        }
+    </style>
+</head>
+
+<body>
+        <div class="div div1"></div>
+        
+        <div class="div div2"></div>
+</body>
+
+</html>
